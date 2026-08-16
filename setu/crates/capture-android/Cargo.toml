@@ -1,0 +1,16 @@
+[package]
+name = "setu-capture-android"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Android capture: MediaProjection, scrcpy-model injection, capability classes"
+
+[dependencies]
+setu-core = { path = "../core" }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+# Placeholder for real bindings
+# jni = "0.21"
+# ndk = "0.8"

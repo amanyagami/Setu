@@ -1,0 +1,15 @@
+[package]
+name = "setu-capture-win"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Windows capture: DDA, Winlogon BitBlt, WGC fallback"
+
+[dependencies]
+setu-core = { path = "../core" }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+# Placeholder for real bindings
+# windows = { version = "0.52", features = ["Win32_Graphics_Dxgi", "Win32_Graphics_Direct3D11", "Win32_Foundation"] }
