@@ -1,0 +1,16 @@
+[package]
+name = "setu-transport"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Setu transport: QUIC, RLNC, priority scheduler, relay client"
+
+[dependencies]
+setu-core = { path = "../core" }
+thiserror = { workspace = true }
+tracing = { workspace = true }
+tokio = { workspace = true }
+bytes = { workspace = true }
+quinn = { workspace = true }
+rustls = { workspace = true }

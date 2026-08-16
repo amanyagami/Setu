@@ -1,0 +1,18 @@
+[package]
+name = "setu-codec"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Video codec pipeline: H.264/HEVC/AV1 with damage-aware tiling"
+
+[dependencies]
+setu-core = { path = "../core" }
+setu-transport = { path = "../transport" }
+thiserror = { workspace = true }
+tokio = { workspace = true }
+tracing = { workspace = true }
+# Placeholder for real codec bindings
+# ffmpeg-sys = "6.0"
+# nvenc = "0.3"
+# vaapi = "0.3"

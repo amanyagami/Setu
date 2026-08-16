@@ -1,0 +1,17 @@
+[package]
+name = "spike0"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+description = "Spike 0: RLNC + QUIC migration feasibility validation"
+
+[dependencies]
+setu-core = { path = "../core" }
+setu-transport = { path = "../transport" }
+tokio = { workspace = true }
+criterion = { workspace = true }
+
+[[bench]]
+name = "rlnc_overhead"
+harness = false
